@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("TODO: URL CLI app")
+	fmt.Println("TODO: URL CLI-app")
 }
