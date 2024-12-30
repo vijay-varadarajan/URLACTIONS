@@ -24,10 +24,17 @@ jobs:
     - name: Build
       run: go build -o urls-cli
 
-    - name: Publish to GitHub Releases
+    - name: Create Tag
+      id: tag
+      run: |
+        GIT_TAG=v0.0.$(date +'%Y%m%d%H%M%S')
+        git tag $GIT_TAG
+        echo ::set-output name=GIT_TAG::$GIT_TAG
+    
+    - name: Publish to Releases
       uses: softprops/action-gh-release@v1
       with:
         files: urls-cli
+        tag_name: ${{ steps.tag.outputs.GIT_TAG }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
