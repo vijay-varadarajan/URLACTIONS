@@ -35,6 +35,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: urls-cli
-        tag_name: ${{ env.GIT_TAG }}
+        tag_name: ${{ steps.tag.outputs.GIT_TAG }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        permissions: write
