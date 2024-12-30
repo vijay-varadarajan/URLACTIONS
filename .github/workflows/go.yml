@@ -29,12 +29,12 @@ jobs:
       run: |
         GIT_TAG=v0.0.$(date +'%Y%m%d%H%M%S')
         git tag $GIT_TAG
-        echo ::set-output name=GIT_TAG::$GIT_TAG
+        echo "GIT_TAG=$GIT_TAG" >> $GITHUB_ENV
     
     - name: Publish to Releases
       uses: softprops/action-gh-release@v1
       with:
         files: urls-cli
-        tag_name: ${{ steps.tag.outputs.GIT_TAG }}
+        tag_name: ${{ env.GIT_TAG }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
