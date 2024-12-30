@@ -26,9 +26,13 @@ jobs:
       run: |
         GIT_TAG=v0.0.$(date +'%Y%m%d%H%M%S')
         echo $GIT_TAG > tag_name.txt
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
         git tag $GIT_TAG
         git push origin $GIT_TAG
         echo "GIT_TAG=$GIT_TAG" >> $GITHUB_ENV
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Publish to Releases
       uses: softprops/action-gh-release@v1
