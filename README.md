@@ -1,7 +1,7 @@
 # URLACTIONS
 
-A simple command line tool to perform various actions on URLs. 
-
+A simple command line tool to perform actions such as check validity, shorten and generate QR code for URLs. 
+This is written in GO.
 
 ### Setup:
 1. Download the latest release from the [Releases](https://github.com/vijay-varadarajan/urlactions/releases)
