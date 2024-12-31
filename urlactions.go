@@ -90,7 +90,7 @@ func goqrgen(url string, savefile bool, filename string) {
 			fmt.Println(err)
 			return
 		}
-		fmt.Println("QR code saved as " + filename)
+		fmt.Println("QR code saved as " + filename + " in current directory.")
 	}
 }
 
