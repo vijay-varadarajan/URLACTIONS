@@ -1,6 +1,6 @@
 # URLACTIONS
 
-A simple CLI application to shorten URLs and generate QR Codes for the URLs, written in GO.
+A simple command line tool to perform various actions on URLs. 
 
 ### Usage:
 
@@ -26,7 +26,7 @@ A simple CLI application to shorten URLs and generate QR Codes for the URLs, wri
     Example: ```urlactions -shorten "https://www.google.com"```
 
     Shortened URLs cannot be saved to a file.
-    Shortened URLs are copied to the clipboard.
+    They are copied to the clipboard automatically.
 
 
 #### Generate QR Code:
@@ -37,13 +37,13 @@ A simple CLI application to shorten URLs and generate QR Codes for the URLs, wri
 
     To save the QR Code to a file with default name, use the ```-save``` option
 
-    ```urlactions qrcode "https://www.google.com" -save```
+    Example: ```urlactions qrcode "https://www.google.com" -save```
 
     (The file will be saved as domain_name.png by default)
 
     To save the QR Code to a file with a custom name, use the ```-save``` and ```-filename``` options
 
-    ```urlactions qrcode "https://www.google.com" -save -filename "google"```
+    Example: ```urlactions qrcode "https://www.google.com" -save -filename "google"```
 
     (The file will be saved as google.png)
 
@@ -54,11 +54,11 @@ A simple CLI application to shorten URLs and generate QR Codes for the URLs, wri
 
  - ```-version``` - Display the version of the application
 
- Example: ```urlactions -version```
+    Example: ```urlactions -version```
 
 
 #### Help:
 
  - ```-help``` - Display the help message
 
- Example: ```urlactions -help```
+    Example: ```urlactions -help```
