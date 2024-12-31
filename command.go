@@ -66,6 +66,6 @@ func (cf *cmdFlags) execute() {
 	case cf.validate != "":
 		govalidateURL(cf.validate)
 	default:
-		fmt.Println("Invalid arguments")
+		fmt.Println("Invalid arguments. Use -help for list of options")
 	}
 }
