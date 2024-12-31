@@ -2,6 +2,31 @@
 
 A simple command line tool to perform various actions on URLs. 
 
+
+### Setup:
+1. Download the latest release from the [Releases](https://github.com/vijay-varadarajan/urlactions/releases)
+2. Extract the contents of the zip file
+
+##### For macOS and Linux:
+3. Open the terminal and navigate to the extracted folder
+4. Run the following command to install the tool:
+
+   ```bash
+   chmod +x install.sh
+   ./install.sh
+   ```
+
+##### For Windows:
+3. Open Command Prompt and navigate to the extracted folder
+4. Run the following command to install the tool:
+
+   ```cmd
+   install.bat
+   ```
+
+5. The tool is now installed and ready to use
+
+
 ### Usage:
 
 ```urlactions -<action> "<url>" [-save [-filename <filename>]]```
