@@ -6,6 +6,9 @@ A simple command line tool to perform various actions on URLs.
 
 ```urlactions -<action> "<url>" [-save [-filename <filename>]]```
 
+*If macOS: Use __urlcli__ instead of __urlactions__ command*
+
+
 ### Actions: 
 
 
