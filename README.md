@@ -1,12 +1,23 @@
-# URLACTIONS - A GO-based CLI Application
+# URLACTIONS
 
-A simple CLI application to shorten URLs and generate QR Codes for the URLs.
+A simple CLI application to shorten URLs and generate QR Codes for the URLs, written in GO.
 
 ### Usage:
 
 ```urlactions -<action> "<url>" [-save [-filename <filename>]]```
 
 ### Actions: 
+
+
+#### Validate URL
+
+ - ```-validate``` - Validate the URL
+
+    Example: ```urlactions -validate "https://www.google.com"```
+
+    Checks if URL is valid and if server is reachable.
+    The validation result is displayed on the console.
+
 
 #### Shorten URL:
 
@@ -38,11 +49,13 @@ A simple CLI application to shorten URLs and generate QR Codes for the URLs.
 
     Files are saved in **PNG format** by default.
 
+
 #### Version:
 
  - ```-version``` - Display the version of the application
 
  Example: ```urlactions -version```
+
 
 #### Help:
 
