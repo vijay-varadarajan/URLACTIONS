@@ -8,7 +8,7 @@ A simple command line tool to perform various actions on URLs.
 2. Extract the contents of the zip file
 
 ##### For macOS and Linux:
-3. Open the terminal and navigate to the extracted folder
+3. Open the terminal in **root access** and navigate to the extracted folder
 4. Run the following command to install the tool:
 
    ```bash
@@ -17,7 +17,7 @@ A simple command line tool to perform various actions on URLs.
    ```
 
 ##### For Windows:
-3. Open Command Prompt and navigate to the extracted folder
+3. Open Command Prompt in **administrator mode** and navigate to the extracted folder
 4. Run the following command to install the tool:
 
    ```cmd
